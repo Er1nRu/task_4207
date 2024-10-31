@@ -3,6 +3,7 @@ import json
 import datetime
 from miniLib import printObj
 from miniLib import FullInfo
+from miniLib import file1Edit
 from miniLib import PrintFlight
 tree = etree.parse("./requests/RS_Via-3.xml")
 root = tree.getroot()
@@ -80,38 +81,44 @@ for intem in temp[1:]:
     if intem_departure_time > slow_flight_departure_time and intem_arrival_time > slow_flight_arrival_time:
         slow_flight = intem 
 
-with open('./results/max.json','w', encoding='utf-8') as f:
+with open('./results/RS_Via-3_max.json','w', encoding='utf-8') as f:
         max_flight_str = etree.tostring(max_flight).decode('utf-8')
         max_flight_dict = {}
         for element in max_flight.iter():
-            max_flight_dict[element.tag] = element.text
+            max_flight_dict[element.tag] = str(element.text).strip()
+        file1Edit(max_flight_dict)
         json.dump(max_flight_dict, f, indent=4, ensure_ascii=False)
 
-with open('./results/min.json','w', encoding='utf-8') as f:
+with open('./results/RS_Via-3_min.json','w', encoding='utf-8') as f:
         min_flight_str = etree.tostring(min_flight).decode('utf-8')
         min_flight_dict = {}
         for element in min_flight.iter():
             min_flight_dict[element.tag] = element.text
+        file1Edit(min_flight_dict)
         json.dump(min_flight_dict, f, indent=4, ensure_ascii=False)
 
-with open('./results/speed.json','w', encoding='utf-8') as f:
+with open('./results/RS_Via-3_speed.json','w', encoding='utf-8') as f:
         speed_flight_str = etree.tostring(speed_flight).decode('utf-8')
         speed_flight_dict = {}
         for element in speed_flight.iter():
             speed_flight_dict[element.tag] = element.text
+        file1Edit(speed_flight_dict)
         json.dump(speed_flight_dict, f, indent=4, ensure_ascii=False)
 
-with open('./results/optium.json','w', encoding='utf-8') as f:
+with open('./results/RS_Via-3_optium.json','w', encoding='utf-8') as f:
         speed_flight_str = etree.tostring(speed_flight).decode('utf-8')
         speed_flight_dict = {}
         for element in speed_flight.iter():
             speed_flight_dict[element.tag] = element.text
+        file1Edit(speed_flight_dict)
+
         json.dump(speed_flight_dict, f, indent=4, ensure_ascii=False)
 
-with open('./results/slow.json','w', encoding='utf-8') as f:
+with open('./results/RS_Via-3_slow.json','w', encoding='utf-8') as f:
         slow_flight_str = etree.tostring(slow_flight).decode('utf-8')
         slow_flight_dict = {}
         for element in slow_flight.iter():
             slow_flight_dict[element.tag] = element.text
+        file1Edit(slow_flight_dict)
         json.dump(slow_flight_dict, f, indent=4, ensure_ascii=False)
 

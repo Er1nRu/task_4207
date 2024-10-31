@@ -35,9 +35,14 @@ def FullInfo(flight):
         for element in flight_item.iter():
             onward_data[element.tag] = element.text
         flight_data['OnwardPricedItinerary'] = onward_data
-
         flight_data['Pricing'] = flight_item[0]
-        
+        del data['Flights']
         data.append(flight_data)  
-
     return data
+    
+def file1Edit(list):
+    list.pop('Flights')
+    list.pop('OnwardPricedItinerary')
+    list.pop('Flight')
+    list.pop('ReturnPricedItinerary')
+    list.pop('Pricing')

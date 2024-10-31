@@ -1,0 +1,14 @@
+{
+    "Carrier": "Emirates",
+    "FlightNumber": "385",
+    "Source": "BKK",
+    "Destination": "DXB",
+    "DepartureTimeStamp": "2018-10-30T0105",
+    "ArrivalTimeStamp": "2018-10-30T0500",
+    "Class": "U",
+    "NumberOfStops": "0",
+    "FareBasis": "2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_BKK_376_32_03:40_$255_BKK_DXB_385_32_01:05__A2_0_0",
+    "WarningText": "None",
+    "TicketType": "E",
+    "ServiceCharges": "1379.80"
+}
