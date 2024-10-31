@@ -21,7 +21,7 @@ def PrintFlight(flights):
         dateTo = datetime.datetime.strptime(localFlighgt[index][5].text, '%Y-%m-%dT%H%M')
         datetime.datetime.strftime(dateFrom,'%d %B %Y года, %H:%M')
         datetime.datetime.strftime(dateTo,'%d %B %Y года, %H:%M')
-        print(f"[{localFlighgt[index][0].text} : {localFlighgt[index][1].text}]\nОткуда [{localFlighgt[index][2].text}|{dateFrom}] Куда [{localFlighgt[index][3].text}|{dateTo}]\nСтоимость [{flights[-1][-1].text}]")
+        print(f"[{localFlighgt[index][0].text} : {localFlighgt[index][1].text}]\nОткуда [{localFlighgt[index][2].text}|{dateFrom}] Куда [{localFlighgt[index][3].text}|{dateTo}]\nСтоимость [{flights[-1][2].text}]")
     print(f"Пересадка [{transfer}]")
     print()
 
@@ -45,4 +45,10 @@ def file1Edit(list):
     list.pop('OnwardPricedItinerary')
     list.pop('Flight')
     list.pop('ReturnPricedItinerary')
+    list.pop('Pricing')
+
+def file2Edit(list):
+    list.pop('Flights')
+    list.pop('OnwardPricedItinerary')
+    list.pop('Flight')
     list.pop('Pricing')

@@ -7,8 +7,8 @@
     "ArrivalTimeStamp": "2018-10-31T0410",
     "Class": "E",
     "NumberOfStops": "0",
-    "FareBasis": "\n                            2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_BAH_513_35_23:35_$255_BAH_BKK_150_35_09:00_$255_BKK_BAH_153_35_20:50_$255_BAH_DXB_500_35_01:55__A2_0_0\n                        ",
-    "WarningText": null,
+    "FareBasis": "2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_BAH_513_35_23:35_$255_BAH_BKK_150_35_09:00_$255_BKK_BAH_153_35_20:50_$255_BAH_DXB_500_35_01:55__A2_0_0",
+    "WarningText": "None",
     "TicketType": "E",
     "ServiceCharges": "877.80"
 }

@@ -7,8 +7,8 @@
     "ArrivalTimeStamp": "2018-10-30T2245",
     "Class": "U",
     "NumberOfStops": "0",
-    "FareBasis": "\n                            2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_DEL_996_9_00:05_$255_DEL_BKK_332_9_13:50_$255_BKK_DEL_333_9_08:50_$255_DEL_DXB_995_9_20:40__A2_0_0\n                        ",
-    "WarningText": null,
+    "FareBasis": "2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_DEL_996_9_00:05_$255_DEL_BKK_332_9_13:50_$255_BKK_DEL_333_9_08:50_$255_DEL_DXB_995_9_20:40__A2_0_0",
+    "WarningText": "None",
     "TicketType": "E",
     "ServiceCharges": "546.80"
 }
